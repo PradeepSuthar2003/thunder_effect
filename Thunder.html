@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Koulen', cursive;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-color: #394863;
+            display: grid;
+            place-items: center;
+        }
+
+        .child {
+            width: calc(100vw - 40vw);
+            height: auto;
+        }
+
+        .child ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .child ul li {
+            list-style: none;
+            letter-spacing: 4rem;
+            font-size: 5rem;
+            color: #687FA3;
+            animation: thunder 1s linear infinite;
+        }
+
+        .child ul li:nth-child(1){
+            animation-delay:0s;
+        } 
+        
+        .child ul li:nth-child(2){
+            animation-delay:0.2s;
+        }
+        
+        .child ul li:nth-child(3){
+            animation-delay:0.3s;
+        }  
+
+        .child ul li:nth-child(4){
+            animation-delay:0.4s;
+        }  
+
+        .child ul li:nth-child(5){
+            animation-delay:0.5s;
+        }  
+
+        .child ul li:nth-child(6){
+            animation-delay:0.6s;
+        } 
+        
+        .child ul li:nth-child(7){
+            animation-delay:0.7s;
+        } 
+
+        @keyframes thunder {
+
+            0%{
+                color:#687FA3;
+            }
+
+            70%{
+                color:#687FA3;
+            }
+            100%{
+                color: #FFDA1F;
+                text-shadow: 1px 1px 3px #FFB700;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="child">
+            <ul>
+                <li>P</li>
+                <li>R</li>
+                <li>A</li>
+                <li>D</li>
+                <li>E</li>
+                <li>E</li>
+                <li>P</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
